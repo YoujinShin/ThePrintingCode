@@ -14,7 +14,7 @@ void setup() {
   background(255);
   
   // Create grid !
-  cols = (int)random(2,15);
+  cols = 8;//(int)random(2,15); // 2,8
   rows = cols;
   gutterSize = 10;
   pageMargin = 50;
@@ -36,7 +36,7 @@ void setup() {
   String author = "Malcolm Gladwell";
   //Module authorModule = grid.modules[0][(int)(rows)/2];
   Module authorModule = grid.modules[0][1];
-  fill(200);
+  fill(155);
   textFont(font);
   text(author, authorModule.x, authorModule.y, authorModule.w * 200, authorModule.h * 100);
   
@@ -48,7 +48,7 @@ void drawTriangle(Grid grid_) {
   Grid tempGrid = grid_;
   for(int j = rows-1; j > 0; j--) {
     for(int i = rows-j; i < cols; i++) {
-      fill(200);
+      fill(20);
       noStroke();
 //      
 //      noFill();
@@ -67,7 +67,8 @@ void drawTriangle(Grid grid_) {
   float tempx = tempGrid.modules[num][num].x;
   float tempy = tempGrid.modules[num][num].y;
   
-  fill(255, 0, 0, map(cols, 2, 15, 120, 255));
+//  fill(255, 0, 0, map(cols, 2, 15, 120, 255));
+  fill(255, 0, 0, 220);
   
   pushMatrix();
   rotate(map(cols, 2, 15, 0, PI/18));
