@@ -12,12 +12,10 @@ float make_bigger = 60;
 
 void setup() {
   size(round(print_width * make_bigger), round(print_height * make_bigger));
-  d = print_width * make_bigger/20;
-  //size(d*20, d*28);
+   
   colorMode(HSB, 360, 100, 100);
-  
   beginRecord(PDF, "myposter.pdf");
-  //background(360);
+  d = print_width * make_bigger/20;
   
   colors = new HSBColor[5];
   mycircles = new Circle[6];
@@ -40,7 +38,6 @@ void setup() {
 }
 
 void setCircle() {
-  noStroke();
   mycircles[0] = new Circle(d, 1, 3*d + 0.5*d, 0.5*d, colors);
   mycircles[1] = new Circle(d, 3, 6*d + 0.5*3*d, 0.5*3*d, colors);
   mycircles[2] = new Circle(d, 2, 0.5*2*d, 6*d + 0.5*2*d, colors);
