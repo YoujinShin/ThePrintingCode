@@ -17,7 +17,7 @@ class Figure{
     displayBasic(D*2, width/2, height/2);
     displayBasic(D, width/2, height/2);
     
-    int num2 = (int) random(3, 8);
+    int num2 = num;//(int) random(3, 8);
     for(int i = 0; i < num2; i++) {
       float degree2 = 360/num2;
       float d2 = D/3;

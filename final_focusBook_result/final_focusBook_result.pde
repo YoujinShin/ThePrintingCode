@@ -17,7 +17,7 @@ void setup() {
   size(round(print_width*make_bigger), round(print_height*make_bigger));
   
   initialize();
-  beginRecord(PDF, "focusbook.pdf");
+  beginRecord(PDF, "focusbook_200.pdf");
   
   background(255);
   
