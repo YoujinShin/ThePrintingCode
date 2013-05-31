@@ -2,7 +2,7 @@ import processing.pdf.*;
 
 float print_width = 6;
 float print_height = 3;
-float make_bigger = 200; // 60
+float make_bigger = 250; // 60
 
 int cols = 6; 
 int rows = 3;
@@ -17,7 +17,7 @@ void setup() {
   size(round(print_width*make_bigger), round(print_height*make_bigger));
   
   initialize();
-  beginRecord(PDF, "focusbook_200.pdf");
+  beginRecord(PDF, "focusbook_250.pdf");
   
   background(255);
   
